@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather API</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="mainDiv">
+            <h2>Weather Api</h2>
+            <div class="textBox">
+                <input type="text" placeholder="Location" id="location">
+                <input type="text" placeholder="Access Token" id="token" value="ZQWZR7YVRKD5RNDH9NV4LH584">
+                <button onclick="accesskey()"> Submit </button>
+                <p style="color: white;" id="success"></p>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="data">
+
+            <h2>Weather Data</h2>
+        </div>
+        <table>
+            <tr colspan="2" rowspan="2">
+                <td>Location: <span id="loca"></span></td>
+
+
+            </tr>
+            <tr>
+                <td>Lat: <span id="lat"></span></td>
+                <td>Long: <span id="long"></span></td>
+            </tr>
+            <tr>
+                <td>TimeZone: <span id="timezone"></span></td>
+            </tr>
+            <tr>
+                <td>Wind Speed: <span id="windSpeed"></span></td>
+            </tr>
+            <tr>
+                <td>Pressure: <span id="pressure"></span></td>
+            </tr>
+            <tr>
+                <td>Humidity: <span id="humidity"></span></td>
+            </tr>
+            <tr>
+                <td>Wind Direction: <span id="wind_dir"></span></td>
+            </tr>
+            <tr>
+                <td>UV Index: <span id="uv_index"></span></td>
+            </tr>
+            <tr>
+                <td>Feels Like: <span id="feelslike"></span></td>
+            </tr>
+
+        </table>
+        <!-- <div class="table">
+                <p>Location: <span>data coming fron backend</span></p>
+            </div> -->
+        <!-- <fieldset>
+                Output
+            </fieldset> -->
+
+
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
